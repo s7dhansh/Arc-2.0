@@ -55,13 +55,13 @@
       }
     }
 
-    html {
+    /* html {
       animation: pip-fadein-html 0.5s ease !important;
     }
 
     .player-holder {
       animation: pip-fadein-player 0.5s ease !important;
-    }
+    } */
 
     #controls {
       opacity: 1 !important;

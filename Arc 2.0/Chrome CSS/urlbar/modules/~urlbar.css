@@ -11,11 +11,11 @@
 }
 
 #urlbar[breakout-extend] {
-  #identity-permission-box, #tracking-protection-icon-container, #page-action-buttons {
+  /* #identity-permission-box, #tracking-protection-icon-container, #page-action-buttons {
     display: none !important;
-  }
+  } */
 
-  #identity-icon-box {
+  /* #identity-icon-box {
     margin-right: 9px !important;
     padding-left: 8px !important;
     padding-right: 25px !important;
@@ -26,9 +26,10 @@
 
   #identity-box {
     margin: 0 !important;
-  }}
+  } */
+}
 
-  
+
 
 
 .urlbarView-title {
@@ -36,7 +37,7 @@
   font-size: 17px !important;
   font-weight: 500 !important;
   color: white !important;
-  
+
 }
 
 
@@ -56,7 +57,7 @@
 
 /*importa--------------------nt helps in removing shit url thing */
 .urlbarView-url, .urlbarView-title-separator::before {
-  
+
   scale: 1 !important;
   height: 0 !important;
 }
@@ -99,7 +100,7 @@
   &[open] {
     min-width: var(--na-urlbar-width) !important;
     max-width: var(--na-urlbar-width) !important;
-   
+
     display: flex !important;
     scale: 0.9 !important;
     flex-direction: column !important;
@@ -114,24 +115,24 @@
 }
 
 #urlbar[open][zen-floating-urlbar='true'] {
- 
+
   left: 55.6% !important;
   min-width: 500px !important;
   border-radius: 25px !important;
-  
-  
+
+
 }
 
 
 /*------------for arc raycast lie toolbar url bar button idea-----------------*/
  #page-action-buttons,
 #urlbar-go-button{
-  
+
   order: 1 !important;
 }
 /*----------------------------------------------------------------------------*/
 
-  
+
 
   /* Make borders more visible */
 
@@ -148,17 +149,7 @@
 
 
 
- /* bottombar animation on expand and close */
-/*
-#urlbar {
-  &[open] {
-    animation: slideUpExpand var(--na-anim-duration) ease;
-  }
 
-  &:not([open]) {
-    animation: slideUpAdressBar var(--na-anim-duration) ease;
-    background-color: var(--na-color-zero) !important;
-  }
 }*/
 
 /* splitter for urlbar input */
@@ -181,10 +172,6 @@
     opacity: 0 !important;
   }
 
-  #urlbar:not([breakout-extend]) .urlbar-input-container>.urlbar-input-box::before {
-    animation-play-state: running;
-    visibility: visible !important;
-    opacity: 1;
   }
 }
 /*
@@ -196,12 +183,12 @@
 .urlbarView-row {
   &[selected] {
     background-color: black !important;
-  
+
     padding-left: 5px !important;
   scale: 0.99 !important;
    filter: brightness(110.1%) contrast(105%) !important;
-    
-    
+
+
   }
 }
 
@@ -223,23 +210,23 @@
     .urlbar-input-box {
       margin: 0px !important;
       padding: 0px !important;
-    
-      
+
+
     }
-   
-   
+
+
     .urlbar-input{
       margin-bottom: 0px !important;
-      margin-left: -20px !important;
+      /* margin-left: -20px !important; */
       margin-top: -4px !important;
       backdrop-filter: brightness(1) !important;
     }
 
-    
+
     .urlbar-input-container {
       max-height: fit-content  !important;
       filter: brightness(95%) !important;
-     
+
     bottom: 0px !important;
      width: 97% !important;
      border-radius: 12px !important;
@@ -247,40 +234,40 @@
       padding-block: 5px !important;
       padding-inline: 0px !important;
        box-shadow: 0px 0px 92px -10px rgba(0, 0, 0, 8.6) !important;
-      
+
     }}
-  
+
 /*
  #page-action-buttons,
  #urlbar-go-button,*/
- 
- 
+
+
   #tracking-protection-icon-container,
- 
-  #urlbar-anon-search-settings {
+
+  /* #urlbar-anon-search-settings {
     display: none !important;
-  }
+  } */
 
   #urlbar-results>.urlbarView-row>.urlbarView-row-inner>.urlbarView-url {
     margin-inline: 0px !important;
     margin-right: 20px !important;
   }
-  
+
   #identity-box{
     margin-top: -12px !important;
     margin-bottom: -12px !important;
     margin-left: 12px !important;
-    
+
   }
-   
+
   #identity-icon{
     margin-bottom: 0px !important;
     filter: brightness(105%) contrast(85%)!important;
     scale: 1.1 !important;
-    
+
   }
-  
- 
+
+
 /*
  #urlbar-results {
     font-size: 1em !important;
@@ -288,12 +275,12 @@
     img {
       display: none !important;*/
     }
-  
+
 
   .urlbarView-results div {
     margin: -5px !important;
     padding-block: 0px !important;
-    
+
     padding-inline: 0px !important; /*6px*/
   }
 }
@@ -302,7 +289,7 @@
   :root[zen-sidebar-expanded="true"] {
     .urlbar-page-action,
     #tracking-protection-icon-container {
-      
+
       margin-left: 0px !important;
     }
   }
@@ -349,49 +336,42 @@
     }
 
     & .urlbarView-row[selected] {
-    
+
       background-color: var(--na-color-text) !important;
     }
 
     & .urlbarView-row:hover {
-     
+
       background-color: var(--na-color-text-second) !important;
     }
 
-    & .urlbarView-row[selected] .urlbarView-title {
-      animation: slideUpAdressBar var(--na-anim-duration) ease infinite;
-      color: var(--na-color-bg) !important;
-    }
+
 
     & .urlbarView-row[selected] .urlbarView-url {
       color: var(--na-color-bg-second) !important;
     }
 
-    & .urlbarView-row:hover .urlbarView-title {
-      animation: slideUpAdressBar var(--na-anim-duration) ease infinite;
-  
-    }
 
     & .urlbarView-row:hover .urlbarView-url {
-  
+
     }
 
     & .urlbarView-row[selected] .urlbarView-action {
       padding-inline: 6px !important;
-    
-    
+
+
     }
 
     & .urlbarView-row:hover .urlbarView-action {
       padding-inline: 6px !important;
-     
-    
+
+
     }
 
     & .urlbarView-row .urlbarView-action {
       padding-inline: 6px !important;
-    
-    
+
+
     }
   }
 }
@@ -409,4 +389,3 @@
 
 
 /*---------------------------------------------------------------------------------------------------------------*/
-
