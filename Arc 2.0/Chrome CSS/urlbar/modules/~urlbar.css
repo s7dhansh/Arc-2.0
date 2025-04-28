@@ -117,7 +117,7 @@
 #urlbar[open][zen-floating-urlbar='true'] {
 
   left: 55.6% !important;
-  min-width: 500px !important;
+  min-width: 900px !important;
   border-radius: 25px !important;
 
 
@@ -226,6 +226,7 @@
     .urlbar-input-container {
       max-height: fit-content  !important;
       filter: brightness(95%) !important;
+      font-size: 32px;
 
     bottom: 0px !important;
      width: 97% !important;
