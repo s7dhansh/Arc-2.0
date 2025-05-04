@@ -166,7 +166,8 @@
 }
 
 /* macOS Dock-like Magnification Effect */
-#urlbar-results .urlbarView-row:hover {
+#urlbar-results .urlbarView-row:hover,
+#urlbar-results .urlbarView-row[selected] {
 	/* transition:
         property-name delay-duration transition-duration transition-timing-function; */
 
