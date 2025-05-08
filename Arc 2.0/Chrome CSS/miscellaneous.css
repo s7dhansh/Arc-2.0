@@ -5,7 +5,7 @@
 #zen-glance-sidebar-container {
 	left: unset !important;
 	right: 4% !important;
-	background-color: var(--zen-main-browser-background-toolbar);
+	/* background-color: var(--zen-main-browser-background-toolbar); */
 	border-radius: 24px;
 
 	& toolbarbutton {
