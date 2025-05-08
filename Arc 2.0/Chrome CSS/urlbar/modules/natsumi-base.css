@@ -206,3 +206,8 @@
 	border-top: 1px solid
 		light-dark(rgba(20, 20, 20, 0.1), rgba(235, 235, 235, 0.1)) !important;
 }
+
+/* dont show workspace info newar address bar */
+#zen-current-workspace-indicator-container {
+	display: none;
+}

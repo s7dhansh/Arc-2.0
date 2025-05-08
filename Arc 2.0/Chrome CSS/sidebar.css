@@ -1,0 +1,9 @@
+.zen-workspace-tabs-section.zen-workspace-normal-tabs-section {
+	padding-bottom: 50px !important;
+}
+
+#zen-sidebar-bottom-buttons {
+	background-color: var(--zen-main-browser-background-toolbar) !important;
+	gap: normal !important;
+	border-radius: 20px !important;;
+}
