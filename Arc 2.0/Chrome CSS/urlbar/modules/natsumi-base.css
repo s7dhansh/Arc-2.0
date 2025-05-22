@@ -208,6 +208,7 @@
 }
 
 /* dont show workspace info newar address bar */
-#zen-current-workspace-indicator-container {
-	display: none;
+#zen-current-workspace-indicator-container,
+.zen-workspace-tabs-section.zen-current-workspace-indicator {
+	display: none !important;
 }
